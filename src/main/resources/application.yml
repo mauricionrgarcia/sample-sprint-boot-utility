@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    hibernate.ddl-auto: none
+    database: MYSQL
+    show-sql: true
+    hibernate: 
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties: 
+      org.hibernate.envers.track_entities_changed_in_revision: false
+  liquibase:
+    change-log: classpath:/db/liquibase/master.db.changelog.xml
+  datasource:
+    url: jdbc:mysql://localhost:3306/utility?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password: q1w2e3r4
+    

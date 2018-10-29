@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+	<changeSet author="mngarcia" id="customer_add_type_01">
+		<sql>
+			ALTER TABLE TB_CUST ADD CD_ACTV VARCHAR(1)
+		</sql>
+	</changeSet>
+
+	<changeSet author="mngarcia" id="customer_add_active_02">
+		<sql>
+			UPDATE TB_CUST SET CD_ACTV = 'A'
+		</sql>
+	</changeSet>
+
+	<changeSet author="mngarcia" id="customer_add_type_03">
+		<sql>
+			ALTER TABLE TB_CUST MODIFY CD_ACTV ENUM ('A', 'I')
+			
+		</sql>
+	</changeSet>
+</databaseChangeLog>

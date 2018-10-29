@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<include file="./changelog/201810281717001-create_category.changelog.xml" relativeToChangelogFile="true"/>
+	<include file="./changelog/201810281717002-initial_values_category.changelog.xml" relativeToChangelogFile="true"/>
+	<include file="./changelog/201810281718001-create_customer.changelog.xml" relativeToChangelogFile="true"/>
+	<include file="./changelog/201810281718002-initial_values_customer.changelog.xml" relativeToChangelogFile="true"/>
+	<include file="./changelog/201810281718003-change_customer_add_active.changelog.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>
